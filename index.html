@@ -5,21 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseñador Freelancer</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+
+
+
 </head>
 <body>
     <header>
-        <h1>Jose Daniel Acosta Casa Freelancer</h1>
+        <h1 class="titulo">Jose Daniel Acosta Casa <span>Freelancer</span></h1>
     </header>
-   <nav>
+    <div class="navegacion-bg">
+     <nav class="navegacion-principal contenedor">
         <a href="#">Inicio</a>
         <a href="#">Sobre Mi</a>
         <a href="#">Clientes</a>
         <a href="#">Contacto</a>
-
-   </nav>
-   <img src="img/hero.jpg">
+     </nav>
+    </div>
+  
 <sectionç>
-    <h2>Diseñp y Desarrollo Web Freelancer</h2>
+    <h2 class="titulo">Diseño y Desarrollo Web Freelancer</h2>
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
@@ -70,10 +81,34 @@
 </main>
   
 
-   <section>
-    <h2>Contacto</h2>
+    <section>
+        <h2>Contacto</h2>
     </section>
-    
+    <form>
+        <fieldset>Conactame llenando todos los campos</fieldset>
+        <div>
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombe">
+        </div>
+        <div>
+            <label>Telefono</label>
+            <input type="tel" placeholder="Tu Telefono">
+        </div>
+
+        <div>
+            <label>Nombre</label>
+            <input type="email" placeholder="Tu email">
+        </div>
+        <div>
+            <label>Mensaje</label>
+            <textarea></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+        
+    </form>
+
     <footer>
     <p>Todos los derechos reservados. Jose Daniel Acosta Casa Freelancer</p>
     </footer>
